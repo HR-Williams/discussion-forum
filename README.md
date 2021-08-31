@@ -72,5 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 props:
 title
 userName
-content
-more tbd
+type
+body
+downvoteCount
+upvoteCount
+timestamp
+
