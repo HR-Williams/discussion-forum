@@ -7,6 +7,8 @@ function Content(props) {
       <h3>{props.title} - {props.user}</h3>
       <h4>{props.timestamp}</h4>
       <p>{props.body}</p>
+     <p> up votes: {props.upvoteCount}</p>
+     <p> down votes: {props.downvoteCount}</p>
     </React.Fragment>
   );
 }

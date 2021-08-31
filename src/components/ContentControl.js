@@ -25,8 +25,6 @@ class ContentControl extends React.Component {
     })
   }
 
-
-
   render() {
     let currentlyVisibleForm = null;
 
