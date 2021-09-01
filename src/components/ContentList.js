@@ -14,18 +14,23 @@ function ContentList(props) {
       upvoteCount={content.upvoteCount}
       downvoteCount={content.downvoteCount}
       id={content.id}
-      key={content.id} />
+      key={content.id} 
+      onVoting={props.onVoting}
+      
+      />
     )}
    
     
     <button onClick={props.formShow}>add something!</button>
     </React.Fragment>
+  
   );
 }
 
 ContentList.propTypes = {
   contentList: PropTypes.array,
-  formShow: PropTypes.func
+  formShow: PropTypes.func,
+  onVoting: PropTypes.func
 }
 
 

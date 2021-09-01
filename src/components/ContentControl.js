@@ -25,17 +25,28 @@ class ContentControl extends React.Component {
     })
   }
 
+  handleVoting = (post) => {
+    const votedMainList = this.state.mainContentList
+    .filter(content => content.id !== post.id)
+    .concat(post);
+    this.setState({
+      mainContentList: votedMainList
+    });
+  }
+
   render() {
     let currentlyVisibleForm = null;
+
 
     if (this.state.formVisible) {
       currentlyVisibleForm = <NewContentForm onNewContentCreation={this.handleAddNewContentToList}/>
     } else {
       currentlyVisibleForm = null;
     }
+
     return (
       <React.Fragment>
-        <div><ContentList contentList={this.state.mainContentList} formShow={this.handleShowingForm}/></div>
+        <div><ContentList contentList={this.state.mainContentList} formShow={this.handleShowingForm} onVoting = {this.handleVoting} /></div>
         <div>{currentlyVisibleForm}</div>
       </React.Fragment>
     )
