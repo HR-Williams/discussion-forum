@@ -20,8 +20,8 @@ function ContentList(props) {
         />
       )}
 
-
-      <button onClick={props.formShow}>add something!</button>
+<br/>
+      <button onClick={props.formShow}>Add a new post!</button>
     </React.Fragment>
 
   );

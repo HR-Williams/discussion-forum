@@ -18,8 +18,8 @@ function Content(props) {
 
   return (
     <React.Fragment>
-      <h3>{props.title} - {props.user}</h3>
-      <h4>{props.timestamp}</h4>
+      <h3>{props.title} - By: {props.user}</h3>
+      <h7>Date created: {props.timestamp}</h7>
       <p>{props.body}</p>
       <p> up votes: {props.upvoteCount}</p>
       <p> down votes: {props.downvoteCount}</p>
@@ -27,6 +27,7 @@ function Content(props) {
       <button onClick={handleUpVoteCount}>vote up</button> 
       <br></br>
       <button onClick={handleDownVoteCount}>vote down</button>
+      <hr/>
     </React.Fragment>
   );
 
