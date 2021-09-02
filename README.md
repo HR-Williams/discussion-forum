@@ -12,7 +12,7 @@
 
 ## Description
 
-This is a project for Epicodus to practice new skills in Redux Fundamentals. This app allows users to post to a forum, view all the posts, and upvote and downvote posts. The Forum automatically displays posts sorted from highest upvotes to lowest upvotes. The List automatically reorders as the votes change.
+This is a project for Epicodus to practice new skills in React with Redux. This app allows users to post to a forum, view all the posts, and upvote and downvote posts. The Forum automatically displays posts sorted from highest upvotes to lowest upvotes. The List automatically reorders as the votes change.
 
 
 ![Component Diagram](/images/Components.png)
