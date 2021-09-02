@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Content(props) {
-  const {content} = props;
+  // const {content} = props;
 
 
   function handleUpVoteCount () {
